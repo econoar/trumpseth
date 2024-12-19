@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('assets/background-meme1.jpg') repeat;
+  z-index: -1;
+  animation: changeBackground 10s infinite;
+}
+
+@keyframes changeBackground {
+  0%, 50% {
+    background-image: url('assets/background-meme1.jpg');
+  }
+  50%, 100% {
+    background-image: url('assets/background-meme2.jpg');
+  }
+}
+
+.eth-display {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  margin-top: 20%;
+}
+
+.trump-dance {
+  position: absolute;
+  width: 150px;
+  bottom: 10px;
+  right: 10px;
+  animation: float 5s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
